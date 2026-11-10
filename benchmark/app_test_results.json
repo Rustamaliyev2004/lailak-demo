@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "App loads",
+    "clean packet has no flags",
+    "issue packet has repeat and total findings",
+    "scanned original selected",
+    "benchmark view renders",
+    "satellite view renders",
+    "pilot view renders"
+  ],
+  "browser_visual_inspection": false,
+  "note": "Streamlit AppTest exercises runtime and UI state; no screenshot-based browser review."
+}

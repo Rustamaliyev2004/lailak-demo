@@ -1,0 +1,752 @@
+{
+  "findings": [
+    {
+      "code": "repeated_invoice",
+      "message": "Same supplier and invoice ID appear more than once. Verify whether this is a duplicate or a documented split.",
+      "sources": [
+        {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "code": "total_mismatch",
+      "message": "Requested 180,000,000.00; listed support 300,000,000.00; difference 120,000,000.00 UZS. Partial financing may explain the difference; confirm it.",
+      "sources": [
+        {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        {
+          "file": "01_request.pdf",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "invoice_count": 3,
+  "requested_amount": "180000000.00",
+  "listed_total": "300000000.00",
+  "currency": "UZS",
+  "method": "Label-based field extraction, local pretrained OCR when needed, exact Decimal arithmetic and explicit rules.",
+  "limits": [
+    "Synthetic test examples do not establish performance on bank records.",
+    "A discrepancy requires clarification; it is not proof of fraud.",
+    "Amounts must be checked against source pages before a funding decision.",
+    "No construction percentage, structural safety or payment approval is inferred."
+  ],
+  "documents": [
+    {
+      "file": "01_request.pdf",
+      "sha256": "03290c059b90c6d44d8a8984b93a9527e6d93fe6e017c2ff6873c7b82ebf9840",
+      "kind": "request",
+      "fields": {
+        "project_id": "DEMO-101",
+        "date": "2026-10-05",
+        "requested_amount": "180000000.00",
+        "currency": "UZS",
+        "requested_amount_raw": "180,000,000.00"
+      },
+      "references": {
+        "project_id": {
+          "file": "01_request.pdf",
+          "page": 1
+        },
+        "date": {
+          "file": "01_request.pdf",
+          "page": 1
+        },
+        "requested_amount": {
+          "file": "01_request.pdf",
+          "page": 1
+        },
+        "currency": {
+          "file": "01_request.pdf",
+          "page": 1
+        },
+        "requested_amount_raw": {
+          "file": "01_request.pdf",
+          "page": 1
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "text": "LAILAK / TEST DOCUMENT\n\n\nSYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n\n\n\n\nProject ID: DEMO­101\n\n\nDate: 2026­10­05\n\n\nRequested amount: 180,000,000.00\n\n\nCurrency: UZS\n\n\n\n\n\nThis fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.",
+          "fields": {
+            "project_id": "DEMO-101",
+            "date": "2026-10-05",
+            "requested_amount": "180000000.00",
+            "currency": "UZS",
+            "requested_amount_raw": "180,000,000.00"
+          },
+          "method": "Embedded PDF text",
+          "regions": [
+            {
+              "text": "LAILAK / TEST DOCUMENT\n",
+              "bbox": [
+                40.0,
+                27.80500030517578,
+                283.5989990234375,
+                49.00899887084961
+              ],
+              "confidence": null
+            },
+            {
+              "text": "SYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n",
+              "bbox": [
+                40.0,
+                70.94999694824219,
+                285.86004638671875,
+                82.11000061035156
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Project ID: DEMO­101\n",
+              "bbox": [
+                40.0,
+                151.4250030517578,
+                189.08497619628906,
+                168.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Date: 2026­10­05\n",
+              "bbox": [
+                40.0,
+                194.4250030517578,
+                156.6850128173828,
+                211.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Requested amount: 180,000,000.00\n",
+              "bbox": [
+                40.0,
+                237.4250030517578,
+                279.2049560546875,
+                254.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Currency: UZS\n",
+              "bbox": [
+                40.0,
+                280.42498779296875,
+                139.12001037597656,
+                297.1650085449219
+              ],
+              "confidence": null
+            },
+            {
+              "text": "This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.\n",
+              "bbox": [
+                40.0,
+                650.0027465820312,
+                538.7797241210938,
+                671.2763061523438
+              ],
+              "confidence": null
+            }
+          ]
+        }
+      ],
+      "seconds": 0.008
+    },
+    {
+      "file": "02_invoice.pdf",
+      "sha256": "9ef0b371d4660e27ec6ba58ee68a41056d739e88cf106b6817ea6b3f6f075963",
+      "kind": "invoice",
+      "fields": {
+        "project_id": "DEMO-101",
+        "invoice_id": "INV-101",
+        "date": "2026-10-01",
+        "supplier": "Sample Concrete LLC",
+        "amount": "120000000.00",
+        "currency": "UZS",
+        "amount_raw": "120,000,000.00"
+      },
+      "references": {
+        "project_id": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "invoice_id": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "date": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "supplier": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "amount": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "currency": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        },
+        "amount_raw": {
+          "file": "02_invoice.pdf",
+          "page": 1
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "text": "LAILAK / TEST DOCUMENT\n\n\nSYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n\n\n\n\nProject ID: DEMO­101\n\n\nInvoice ID: INV­101\n\n\nDate: 2026­10­01\n\n\nSupplier: Sample Concrete LLC\n\n\nInvoice total: 120,000,000.00\n\n\nCurrency: UZS\n\n\n\n\n\nThis fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.",
+          "fields": {
+            "project_id": "DEMO-101",
+            "invoice_id": "INV-101",
+            "date": "2026-10-01",
+            "supplier": "Sample Concrete LLC",
+            "amount": "120000000.00",
+            "currency": "UZS",
+            "amount_raw": "120,000,000.00"
+          },
+          "method": "Embedded PDF text",
+          "regions": [
+            {
+              "text": "LAILAK / TEST DOCUMENT\n",
+              "bbox": [
+                40.0,
+                27.80500030517578,
+                283.5989990234375,
+                49.00899887084961
+              ],
+              "confidence": null
+            },
+            {
+              "text": "SYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n",
+              "bbox": [
+                40.0,
+                70.94999694824219,
+                285.86004638671875,
+                82.11000061035156
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Project ID: DEMO­101\n",
+              "bbox": [
+                40.0,
+                151.4250030517578,
+                189.08497619628906,
+                168.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Invoice ID: INV­101\n",
+              "bbox": [
+                40.0,
+                194.4250030517578,
+                169.9449920654297,
+                211.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Date: 2026­10­01\n",
+              "bbox": [
+                40.0,
+                237.4250030517578,
+                156.6850128173828,
+                254.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Supplier: Sample Concrete LLC\n",
+              "bbox": [
+                40.0,
+                280.42498779296875,
+                250.8099822998047,
+                297.1650085449219
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Invoice total: 120,000,000.00\n",
+              "bbox": [
+                40.0,
+                323.42498779296875,
+                232.49496459960938,
+                340.1650085449219
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Currency: UZS\n",
+              "bbox": [
+                40.0,
+                366.42498779296875,
+                139.12001037597656,
+                383.1650085449219
+              ],
+              "confidence": null
+            },
+            {
+              "text": "This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.\n",
+              "bbox": [
+                40.0,
+                650.0027465820312,
+                538.7797241210938,
+                671.2763061523438
+              ],
+              "confidence": null
+            }
+          ]
+        }
+      ],
+      "seconds": 0.008
+    },
+    {
+      "file": "03_invoice_scan.png",
+      "sha256": "50c1efd37b10aa1cb40f396b2a9a2ba0a94f28042630b8d480d8b452dc96ae7c",
+      "kind": "invoice",
+      "fields": {
+        "project_id": "DEMO-101",
+        "invoice_id": "INV-102",
+        "date": "2026-10-03",
+        "supplier": "Sample Steel LLC",
+        "amount": "60000000.00",
+        "currency": "UZS",
+        "amount_raw": "60,000,000.00"
+      },
+      "references": {
+        "project_id": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "invoice_id": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "date": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "supplier": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "amount": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "currency": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        },
+        "amount_raw": {
+          "file": "03_invoice_scan.png",
+          "page": 1
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "text": "LAILAK / TEST DOCUMENT\nSYNTHETIC DATA - NOT A REAL LOAN OR INVOICE\nProject ID: DEMO-101\nInvoice ID: INV-102\nDate: 2026-10-03\nSupplier: Sample Steel LLC\nInvoice total: 60,000,000.00\nCurrency: UZS\nThis fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.",
+          "fields": {
+            "project_id": "DEMO-101",
+            "invoice_id": "INV-102",
+            "date": "2026-10-03",
+            "supplier": "Sample Steel LLC",
+            "amount": "60000000.00",
+            "currency": "UZS",
+            "amount_raw": "60,000,000.00"
+          },
+          "method": "Apple Vision OCR",
+          "regions": [
+            {
+              "bbox": [
+                0.06570841010059442,
+                0.943313953693753,
+                0.4127310208323499,
+                0.021963824573745128
+              ],
+              "confidence": 1,
+              "text": "LAILAK / TEST DOCUMENT"
+            },
+            {
+              "bbox": [
+                0.06365502099608585,
+                0.9011627905113528,
+                0.41683780174601115,
+                0.013081395727956302
+              ],
+              "confidence": 1,
+              "text": "SYNTHETIC DATA - NOT A REAL LOAN OR INVOICE"
+            },
+            {
+              "bbox": [
+                0.0677618020038981,
+                0.7994186050850004,
+                0.2484599686821422,
+                0.0174418596120981
+              ],
+              "confidence": 1,
+              "text": "Project ID: DEMO-101"
+            },
+            {
+              "bbox": [
+                0.06570841901992731,
+                0.7499999998940161,
+                0.21971252533604374,
+                0.01602564102564108
+              ],
+              "confidence": 1,
+              "text": "Invoice ID: INV-102"
+            },
+            {
+              "bbox": [
+                0.06776180971974394,
+                0.6976495725642722,
+                0.19507186290360645,
+                0.017628205128205066
+              ],
+              "confidence": 1,
+              "text": "Date: 2026-10-03"
+            },
+            {
+              "bbox": [
+                0.06570842333214565,
+                0.646802325540389,
+                0.31211498064577037,
+                0.018895348931989187
+              ],
+              "confidence": 1,
+              "text": "Supplier: Sample Steel LLC"
+            },
+            {
+              "bbox": [
+                0.06365503405855573,
+                0.5929487183814838,
+                0.31416837110260104,
+                0.019230769230769273
+              ],
+              "confidence": 1,
+              "text": "Invoice total: 60,000,000.00"
+            },
+            {
+              "bbox": [
+                0.06750872372787393,
+                0.5424190048901283,
+                0.1669111914505051,
+                0.02040862731444526
+              ],
+              "confidence": 1,
+              "text": "Currency: UZS"
+            },
+            {
+              "bbox": [
+                0.06772259307068194,
+                0.2136709004413474,
+                0.8378500578266617,
+                0.01325092152652585
+              ],
+              "confidence": 1,
+              "text": "This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate"
+            },
+            {
+              "bbox": [
+                0.06776180655768285,
+                0.20192307690177447,
+                0.5605749493279126,
+                0.011752136752136821
+              ],
+              "confidence": 1,
+              "text": "answer file. A flagged issue is a test condition and does not establish fraud."
+            }
+          ]
+        }
+      ],
+      "seconds": 0.001
+    },
+    {
+      "file": "04_work_report.pdf",
+      "sha256": "0fe93fbe7747f06546bfbc7aaecd3010a1a573082ee066342afb75aed65663ba",
+      "kind": "work_report",
+      "fields": {
+        "project_id": "DEMO-101",
+        "date": "2026-10-04",
+        "claimed_stage": "Exterior frame works reported; requires inspection"
+      },
+      "references": {
+        "project_id": {
+          "file": "04_work_report.pdf",
+          "page": 1
+        },
+        "date": {
+          "file": "04_work_report.pdf",
+          "page": 1
+        },
+        "claimed_stage": {
+          "file": "04_work_report.pdf",
+          "page": 1
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "text": "LAILAK / TEST DOCUMENT\n\n\nSYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n\n\n\n\nProject ID: DEMO­101\n\n\nDate: 2026­10­04\n\n\nReported stage: Exterior frame works reported; requires inspection\n\n\n\n\n\nThis fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.",
+          "fields": {
+            "project_id": "DEMO-101",
+            "date": "2026-10-04",
+            "claimed_stage": "Exterior frame works reported; requires inspection"
+          },
+          "method": "Embedded PDF text",
+          "regions": [
+            {
+              "text": "LAILAK / TEST DOCUMENT\n",
+              "bbox": [
+                40.0,
+                27.80500030517578,
+                283.5989990234375,
+                49.00899887084961
+              ],
+              "confidence": null
+            },
+            {
+              "text": "SYNTHETIC DATA ­ NOT A REAL LOAN OR INVOICE\n",
+              "bbox": [
+                40.0,
+                70.94999694824219,
+                285.86004638671875,
+                82.11000061035156
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Project ID: DEMO­101\n",
+              "bbox": [
+                40.0,
+                151.4250030517578,
+                189.08497619628906,
+                168.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Date: 2026­10­04\n",
+              "bbox": [
+                40.0,
+                194.4250030517578,
+                156.6850128173828,
+                211.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "Reported stage: Exterior frame works reported; requires inspection\n",
+              "bbox": [
+                40.0,
+                237.4250030517578,
+                482.4248352050781,
+                254.1649932861328
+              ],
+              "confidence": null
+            },
+            {
+              "text": "This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.\n",
+              "bbox": [
+                40.0,
+                650.0027465820312,
+                538.7797241210938,
+                671.2763061523438
+              ],
+              "confidence": null
+            }
+          ]
+        }
+      ],
+      "seconds": 0.009
+    },
+    {
+      "file": "05_repeated_invoice_scan.png",
+      "sha256": "d90c20f242dba5e5755c012b21e5609f53ed9547767499955e6768eb986a5fd9",
+      "kind": "invoice",
+      "fields": {
+        "project_id": "DEMO-101",
+        "invoice_id": "INV-101",
+        "date": "2026-10-01",
+        "supplier": "Sample Concrete LLC",
+        "amount": "120000000.00",
+        "currency": "UZS",
+        "amount_raw": "120,000,000.00"
+      },
+      "references": {
+        "project_id": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "invoice_id": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "date": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "supplier": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "amount": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "currency": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        },
+        "amount_raw": {
+          "file": "05_repeated_invoice_scan.png",
+          "page": 1
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "text": "LAILAK / TEST DOCUMENT\nSYNTHETIC DATA - NOT A REAL LOAN OR INVOICE\nProject ID: DEMO-101\nInvoice ID: INV-101\nDate: 2026-10-01\nSupplier: Sample Concrete LLC\nInvoice total: 120,000,000.00\nCurrency: UZS\nThis fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate\nanswer file. A flagged issue is a test condition and does not establish fraud.",
+          "fields": {
+            "project_id": "DEMO-101",
+            "invoice_id": "INV-101",
+            "date": "2026-10-01",
+            "supplier": "Sample Concrete LLC",
+            "amount": "120000000.00",
+            "currency": "UZS",
+            "amount_raw": "120,000,000.00"
+          },
+          "method": "Apple Vision OCR",
+          "regions": [
+            {
+              "bbox": [
+                0.06570841010059442,
+                0.943313953693753,
+                0.4127310208323499,
+                0.021963824573745128
+              ],
+              "confidence": 1,
+              "text": "LAILAK / TEST DOCUMENT"
+            },
+            {
+              "bbox": [
+                0.06365502099608585,
+                0.9011627905113528,
+                0.41683780174601115,
+                0.013081395727956302
+              ],
+              "confidence": 1,
+              "text": "SYNTHETIC DATA - NOT A REAL LOAN OR INVOICE"
+            },
+            {
+              "bbox": [
+                0.0677618020038981,
+                0.7994186050850004,
+                0.2484599686821422,
+                0.0174418596120981
+              ],
+              "confidence": 1,
+              "text": "Project ID: DEMO-101"
+            },
+            {
+              "bbox": [
+                0.06570842020421205,
+                0.7499999998942144,
+                0.2176591348792131,
+                0.01602564102564108
+              ],
+              "confidence": 1,
+              "text": "Invoice ID: INV-101"
+            },
+            {
+              "bbox": [
+                0.0677618051334468,
+                0.6976495725650527,
+                0.19301848397154098,
+                0.017628205128205177
+              ],
+              "confidence": 1,
+              "text": "Date: 2026-10-01"
+            },
+            {
+              "bbox": [
+                0.0657084203503789,
+                0.646802325539563,
+                0.3572895245969836,
+                0.018895348931989076
+              ],
+              "confidence": 1,
+              "text": "Supplier: Sample Concrete LLC"
+            },
+            {
+              "bbox": [
+                0.06365502695911114,
+                0.5929487183812446,
+                0.32648871384358485,
+                0.019230769230769273
+              ],
+              "confidence": 1,
+              "text": "Invoice total: 120,000,000.00"
+            },
+            {
+              "bbox": [
+                0.06750872372787393,
+                0.5424190048901283,
+                0.1669111914505051,
+                0.02040862731444526
+              ],
+              "confidence": 1,
+              "text": "Currency: UZS"
+            },
+            {
+              "bbox": [
+                0.06772259307068194,
+                0.2136709004413474,
+                0.8378500578266617,
+                0.01325092152652585
+              ],
+              "confidence": 1,
+              "text": "This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate"
+            },
+            {
+              "bbox": [
+                0.06776180655768285,
+                0.20192307690177447,
+                0.5605749493279126,
+                0.011752136752136821
+              ],
+              "confidence": 1,
+              "text": "answer file. A flagged issue is a test condition and does not establish fraud."
+            }
+          ]
+        }
+      ],
+      "seconds": 0.001
+    }
+  ]
+}

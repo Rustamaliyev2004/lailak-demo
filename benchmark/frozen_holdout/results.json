@@ -1,0 +1,226 @@
+{
+  "parser_sha256": "a9d5df969de215a20ace7b13dbfb68db8ab4a85536e76340499af114baf40f08",
+  "synthetic_only": true,
+  "documents": 6,
+  "fields_correct": 36,
+  "fields_total": 36,
+  "complete_documents": 6,
+  "results": [
+    {
+      "file": "benchmark/frozen_holdout/01_en_native.pdf",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-901",
+          "actual": "HOLD-901",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8001",
+          "actual": "DOC-8001",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Sahro Beton",
+          "actual": "Sahro Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "144268.56",
+          "actual": "144268.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.014
+    },
+    {
+      "file": "benchmark/frozen_holdout/02_ru_native.pdf",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-902",
+          "actual": "HOLD-902",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8002",
+          "actual": "DOC-8002",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Бетон",
+          "actual": "Орион Бетон",
+          "correct": true
+        },
+        "amount": {
+          "expected": "216402.56",
+          "actual": "216402.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.006
+    },
+    {
+      "file": "benchmark/frozen_holdout/03_uz_native.pdf",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-903",
+          "actual": "HOLD-903",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8003",
+          "actual": "DOC-8003",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Vodiy Savdo",
+          "actual": "Vodiy Savdo",
+          "correct": true
+        },
+        "amount": {
+          "expected": "288536.56",
+          "actual": "288536.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.005
+    },
+    {
+      "file": "benchmark/frozen_holdout/04_en_scan.png",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-904",
+          "actual": "HOLD-904",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8004",
+          "actual": "DOC-8004",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Sahro Beton",
+          "actual": "Sahro Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "360670.56",
+          "actual": "360670.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 28.297
+    },
+    {
+      "file": "benchmark/frozen_holdout/05_ru_scan.png",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-905",
+          "actual": "HOLD-905",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8005",
+          "actual": "DOC-8005",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Бетон",
+          "actual": "Орион Бетон",
+          "correct": true
+        },
+        "amount": {
+          "expected": "432804.56",
+          "actual": "432804.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.254
+    },
+    {
+      "file": "benchmark/frozen_holdout/06_uz_scan.png",
+      "checks": {
+        "project_id": {
+          "expected": "HOLD-906",
+          "actual": "HOLD-906",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "DOC-8006",
+          "actual": "DOC-8006",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-10-12",
+          "actual": "2026-10-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Vodiy Savdo",
+          "actual": "Vodiy Savdo",
+          "correct": true
+        },
+        "amount": {
+          "expected": "504938.56",
+          "actual": "504938.56",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.245
+    }
+  ]
+}

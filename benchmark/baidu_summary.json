@@ -1,0 +1,13 @@
+{
+  "provider": "Baidu Unlimited OCR 2 official Space",
+  "pages": 3,
+  "languages": [
+    "English",
+    "Russian",
+    "Uzbek Latin"
+  ],
+  "exact_fields": 18,
+  "total_fields": 18,
+  "basis": "One generated invoice in each language. The original English raw response and the two language trial responses are preserved.",
+  "local_workflow": "Default local OCR; official cloud service optional for synthetic samples only."
+}

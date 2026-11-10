@@ -1,0 +1,143 @@
+{
+  "radar": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20231006T131537_20231006T131602_050645_0619FC_rtc",
+      "date": "2023-10-06",
+      "month": "2023-10",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -9.2328916472574
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20240403T131534_20240403T131559_053270_0674E6_rtc",
+      "date": "2024-04-03",
+      "month": "2024-04",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -7.259024394019818
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20241012T131533_20241012T131558_056070_06DC02_rtc",
+      "date": "2024-10-12",
+      "month": "2024-10",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -5.315980552653353
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20250410T131526_20250410T131551_058695_0744C5_rtc",
+      "date": "2025-04-10",
+      "month": "2025-04",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -4.140586875699817
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20251007T131524_20251007T131549_061320_07A682_rtc",
+      "date": "2025-10-07",
+      "month": "2025-10",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -5.81288362275286
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260405T131515_20260405T131540_063945_080B26_rtc",
+      "date": "2026-04-05",
+      "month": "2026-04",
+      "track": 173,
+      "pass": "ascending",
+      "platform": "sentinel-1a",
+      "valid_pixels": 121,
+      "vv_db": -6.0768381123757695
+    }
+  ],
+  "optical": [
+    {
+      "item_id": "S2B_MSIL2A_20231003T060659_R134_T42TWL_20231003T125401",
+      "date": "2023-10-03",
+      "month": "2023-10",
+      "baseline": "05.09",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.35590512670494023,
+      "ndbi": -0.24512484221544903
+    },
+    {
+      "item_id": "S2A_MSIL2A_20240418T061901_R034_T42TWL_20240418T102728",
+      "date": "2024-04-18",
+      "month": "2024-04",
+      "baseline": "05.10",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.09674705133796106,
+      "ndbi": 0.06448481695115962
+    },
+    {
+      "item_id": "S2B_MSIL2A_20241020T061809_R034_T42TWL_20241020T084240",
+      "date": "2024-10-20",
+      "month": "2024-10",
+      "baseline": "05.11",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.060856624991070064,
+      "ndbi": 0.03602845338162391
+    },
+    {
+      "item_id": "S2B_MSIL2A_20250408T061629_R034_T42TWL_20250408T082848",
+      "date": "2025-04-08",
+      "month": "2025-04",
+      "baseline": "05.11",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.059887109727591537,
+      "ndbi": 0.044891785105628905
+    },
+    {
+      "item_id": "S2B_MSIL2A_20251015T061729_R034_T42TWL_20251015T083251",
+      "date": "2025-10-15",
+      "month": "2025-10",
+      "baseline": "05.11",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.06366684220077068,
+      "ndbi": 0.06013972171381409
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260413T061629_R034_T42TWL_20260413T084305",
+      "date": "2026-04-13",
+      "month": "2026-04",
+      "baseline": "05.12",
+      "valid_fraction": 0.9666666666666667,
+      "valid_pixels": 29,
+      "dn_offset": -1000,
+      "ndvi": 0.06149149585695596,
+      "ndbi": 0.07918088737201365
+    },
+    {
+      "item_id": "S2B_MSIL2A_20261020T061859_R034_T42TWL_20261020T083959",
+      "date": "2026-10-20",
+      "month": "2026-10",
+      "baseline": "05.13",
+      "valid_fraction": 1.0,
+      "valid_pixels": 30,
+      "dn_offset": -1000,
+      "ndvi": 0.06859677160605387,
+      "ndbi": 0.06888043805524424
+    }
+  ]
+}

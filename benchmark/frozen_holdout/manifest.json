@@ -1,0 +1,90 @@
+{
+  "parser_sha256_before_test": "a9d5df969de215a20ace7b13dbfb68db8ab4a85536e76340499af114baf40f08",
+  "description": "Six newly generated documents after parser freeze. New row-table layout and existing label synonyms; two formats, three languages. Synthetic challenge only; no independent bank validation. Parser will not be tuned on these outputs.",
+  "cases": [
+    {
+      "path": "benchmark/frozen_holdout/01_en_native.pdf",
+      "expected": {
+        "project_id": "HOLD-901",
+        "invoice_id": "DOC-8001",
+        "date": "2026-10-12",
+        "supplier": "Sahro Beton",
+        "amount": "144268.56",
+        "currency": "UZS"
+      },
+      "language": "en",
+      "scan": false,
+      "sha256": "82effff54fa041c6f94e2686155705d77f860f6684eb9bd4c130c5c81f85e9f0"
+    },
+    {
+      "path": "benchmark/frozen_holdout/02_ru_native.pdf",
+      "expected": {
+        "project_id": "HOLD-902",
+        "invoice_id": "DOC-8002",
+        "date": "2026-10-12",
+        "supplier": "Орион Бетон",
+        "amount": "216402.56",
+        "currency": "UZS"
+      },
+      "language": "ru",
+      "scan": false,
+      "sha256": "d695a754b0b06a3ec9818855b915f969b2f6d9734e5efb5e044717fde9e40042"
+    },
+    {
+      "path": "benchmark/frozen_holdout/03_uz_native.pdf",
+      "expected": {
+        "project_id": "HOLD-903",
+        "invoice_id": "DOC-8003",
+        "date": "2026-10-12",
+        "supplier": "Vodiy Savdo",
+        "amount": "288536.56",
+        "currency": "UZS"
+      },
+      "language": "uz",
+      "scan": false,
+      "sha256": "8424ca5e58fc0bffd526a5d6a013247ced733b197c5ef37c34ed77f0a23dac23"
+    },
+    {
+      "path": "benchmark/frozen_holdout/04_en_scan.png",
+      "expected": {
+        "project_id": "HOLD-904",
+        "invoice_id": "DOC-8004",
+        "date": "2026-10-12",
+        "supplier": "Sahro Beton",
+        "amount": "360670.56",
+        "currency": "UZS"
+      },
+      "language": "en",
+      "scan": true,
+      "sha256": "79af7f4d28d7c9d2604f3d228c6f9ea09bf0b85db4fbcb24b1624a01b4732647"
+    },
+    {
+      "path": "benchmark/frozen_holdout/05_ru_scan.png",
+      "expected": {
+        "project_id": "HOLD-905",
+        "invoice_id": "DOC-8005",
+        "date": "2026-10-12",
+        "supplier": "Орион Бетон",
+        "amount": "432804.56",
+        "currency": "UZS"
+      },
+      "language": "ru",
+      "scan": true,
+      "sha256": "90a32f231e1df56c59cd0229e5336fd39aed74364242d47309c5cfc75eb4f9ae"
+    },
+    {
+      "path": "benchmark/frozen_holdout/06_uz_scan.png",
+      "expected": {
+        "project_id": "HOLD-906",
+        "invoice_id": "DOC-8006",
+        "date": "2026-10-12",
+        "supplier": "Vodiy Savdo",
+        "amount": "504938.56",
+        "currency": "UZS"
+      },
+      "language": "uz",
+      "scan": true,
+      "sha256": "18812d915b1f550f084e2e84e427b4dcce5723720cb35e0bd68cc5eaba9b140c"
+    }
+  ]
+}

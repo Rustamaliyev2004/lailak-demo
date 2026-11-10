@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "basis": "Adapter decoded a replay of the actual previously returned model SSE response. This is a transport/decoder regression test, not an additional model trial."
+}

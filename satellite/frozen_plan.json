@@ -1,0 +1,53 @@
+{
+  "end": "2026-10-31",
+  "radar_filter": {
+    "relative_orbit": 173,
+    "orbit_state": "ascending",
+    "platform": "sentinel-1a",
+    "mode": "IW"
+  },
+  "sites": [
+    {
+      "id": "tashkent",
+      "lat": 41.3134,
+      "lon": 69.2454,
+      "half_m": 120,
+      "start": "2019-01-01",
+      "role": "development example; boundary unverified"
+    },
+    {
+      "id": "sergeli",
+      "lat": 41.124,
+      "lon": 69.1905,
+      "half_m": 55,
+      "start": "2023-06-01",
+      "role": "development example; tuned earlier"
+    },
+    {
+      "id": "valiasr",
+      "lat": 41.31403,
+      "lon": 69.30413,
+      "half_m": 85,
+      "start": "2023-06-01",
+      "role": "development example; weak prior signal"
+    },
+    {
+      "id": "housing_control",
+      "lat": 41.3125,
+      "lon": 69.3041,
+      "half_m": 50,
+      "start": "2023-06-01",
+      "role": "control hypothesis; stable housing not independently verified"
+    },
+    {
+      "id": "farm",
+      "lat": 41.1262,
+      "lon": 69.1955,
+      "half_m": 50,
+      "start": "2023-01-01",
+      "role": "vegetation illustration; crop unknown"
+    }
+  ],
+  "optical": "common SCL 20m grid; classes4,5,6; positive reflectance; >=60% valid and5pixels; one least scene-cloudy date in each sampled month; baseline>=4 offset-1000",
+  "purpose": "Repair extraction; no independent stage-accuracy evaluation. Bounded rerun samples April and October only; one eligible radar date and one least scene-cloudy optical date each month. Cadence chosen before examining observations."
+}

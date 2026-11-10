@@ -1,0 +1,193 @@
+{
+  "plan": {
+    "end": "2026-10-31",
+    "radar_filter": {
+      "relative_orbit": 173,
+      "orbit_state": "ascending",
+      "platform": "sentinel-1a",
+      "mode": "IW"
+    },
+    "sites": [
+      {
+        "id": "tashkent",
+        "lat": 41.3134,
+        "lon": 69.2454,
+        "half_m": 120,
+        "start": "2019-01-01",
+        "role": "development example; boundary unverified"
+      },
+      {
+        "id": "sergeli",
+        "lat": 41.124,
+        "lon": 69.1905,
+        "half_m": 55,
+        "start": "2023-06-01",
+        "role": "development example; tuned earlier"
+      },
+      {
+        "id": "valiasr",
+        "lat": 41.31403,
+        "lon": 69.30413,
+        "half_m": 85,
+        "start": "2023-06-01",
+        "role": "development example; weak prior signal"
+      },
+      {
+        "id": "housing_control",
+        "lat": 41.3125,
+        "lon": 69.3041,
+        "half_m": 50,
+        "start": "2023-06-01",
+        "role": "control hypothesis; stable housing not independently verified"
+      },
+      {
+        "id": "farm",
+        "lat": 41.1262,
+        "lon": 69.1955,
+        "half_m": 50,
+        "start": "2023-01-01",
+        "role": "vegetation illustration; crop unknown"
+      }
+    ],
+    "optical": "common SCL 20m grid; classes4,5,6; positive reflectance; >=60% valid and5pixels; one least scene-cloudy date in each sampled month; baseline>=4 offset-1000",
+    "purpose": "Repair extraction; no independent stage-accuracy evaluation. Bounded rerun samples April and October only; one eligible radar date and one least scene-cloudy optical date each month. Cadence chosen before examining observations."
+  },
+  "site": {
+    "id": "tashkent",
+    "lat": 41.3134,
+    "lon": 69.2454,
+    "half_m": 120,
+    "start": "2019-01-01",
+    "role": "development example; boundary unverified"
+  },
+  "acquisitions": {
+    "sentinel-1-rtc": [
+      {
+        "id": "S1A_IW_GRDH_1SDV_20190406T131518_20190406T131543_026670_02FE2D_rtc",
+        "datetime": "2019-04-06 13:15:30.903909+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20191003T131527_20191003T131552_029295_035431_rtc",
+        "datetime": "2019-10-03 13:15:40.129349+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20200412T131524_20200412T131549_032095_03B596_rtc",
+        "datetime": "2020-04-12 13:15:37.389122+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20201009T131534_20201009T131559_034720_040B6E_rtc",
+        "datetime": "2020-10-09 13:15:46.585416+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20210407T131530_20210407T131555_037345_046684_rtc",
+        "datetime": "2021-04-07 13:15:43.177679+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20211016T131526_20211016T131551_040145_04C117_rtc",
+        "datetime": "2021-10-16 13:15:38.887983+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20220402T131522_20220402T131547_042595_0514CD_rtc",
+        "datetime": "2022-04-02 13:15:35.281720+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20221011T131532_20221011T131557_045395_056D92_rtc",
+        "datetime": "2022-10-11 13:15:44.700519+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20230409T131528_20230409T131553_048020_05C594_rtc",
+        "datetime": "2023-04-09 13:15:41.305431+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20231006T131537_20231006T131602_050645_0619FC_rtc",
+        "datetime": "2023-10-06 13:15:49.737019+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20240403T131534_20240403T131559_053270_0674E6_rtc",
+        "datetime": "2024-04-03 13:15:46.533786+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20241012T131533_20241012T131558_056070_06DC02_rtc",
+        "datetime": "2024-10-12 13:15:45.767001+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20250410T131526_20250410T131551_058695_0744C5_rtc",
+        "datetime": "2025-04-10 13:15:39.122754+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20251007T131524_20251007T131549_061320_07A682_rtc",
+        "datetime": "2025-10-07 13:15:36.876028+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20260405T131515_20260405T131540_063945_080B26_rtc",
+        "datetime": "2026-04-05 13:15:27.910882+00:00"
+      }
+    ],
+    "sentinel-2-l2a": [
+      {
+        "id": "S2A_MSIL2A_20190412T060631_R134_T42TWL_20201007T010702",
+        "datetime": "2019-04-12 06:06:31.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20191009T060741_R134_T42TWL_20201004T001506",
+        "datetime": "2019-10-09 06:07:41.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20200419T061631_R034_T42TWL_20200924T031608",
+        "datetime": "2020-04-19 06:16:31.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20201018T060849_R134_T42TWL_20201020T005149",
+        "datetime": "2020-10-18 06:08:49.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20210414T061621_R034_T42TWL_20210415T104336",
+        "datetime": "2021-04-14 06:16:21.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20211011T061801_R034_T42TWL_20211011T145635",
+        "datetime": "2021-10-11 06:18:01.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20220404T061629_R034_T42TWL_20220404T173139",
+        "datetime": "2022-04-04 06:16:29.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20221006T061731_R034_T42TWL_20221006T225447",
+        "datetime": "2022-10-06 06:17:31.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20230421T060631_R134_T42TWL_20230421T134146",
+        "datetime": "2023-04-21 06:06:31.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20231003T060659_R134_T42TWL_20231003T125401",
+        "datetime": "2023-10-03 06:06:59.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20240418T061901_R034_T42TWL_20240418T102728",
+        "datetime": "2024-04-18 06:19:01.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20241020T061809_R034_T42TWL_20241020T084240",
+        "datetime": "2024-10-20 06:18:09.024000+00:00"
+      },
+      {
+        "id": "S2C_MSIL2A_20250410T060651_R134_T42TWL_20250410T094513",
+        "datetime": "2025-04-10 06:06:51.025000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20251015T061729_R034_T42TWL_20251015T083251",
+        "datetime": "2025-10-15 06:17:29.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20260413T061629_R034_T42TWL_20260413T084305",
+        "datetime": "2026-04-13 06:16:29.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20261020T061859_R034_T42TWL_20261020T083959",
+        "datetime": "2026-10-20 06:18:59.025000+00:00"
+      }
+    ]
+  }
+}

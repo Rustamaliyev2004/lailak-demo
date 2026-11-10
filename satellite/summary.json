@@ -1,0 +1,47 @@
+[
+  {
+    "site": "tashkent",
+    "radar_selected": 15,
+    "radar_usable": 15,
+    "optical_selected": 16,
+    "optical_usable": 16,
+    "months": 16,
+    "independent_ground_truth": false
+  },
+  {
+    "site": "sergeli",
+    "radar_selected": 6,
+    "radar_usable": 6,
+    "optical_selected": 7,
+    "optical_usable": 7,
+    "months": 7,
+    "independent_ground_truth": false
+  },
+  {
+    "site": "valiasr",
+    "radar_selected": 6,
+    "radar_usable": 6,
+    "optical_selected": 7,
+    "optical_usable": 7,
+    "months": 7,
+    "independent_ground_truth": false
+  },
+  {
+    "site": "housing_control",
+    "radar_selected": 6,
+    "radar_usable": 6,
+    "optical_selected": 7,
+    "optical_usable": 7,
+    "months": 7,
+    "independent_ground_truth": false
+  },
+  {
+    "site": "farm",
+    "radar_selected": 7,
+    "radar_usable": 7,
+    "optical_selected": 8,
+    "optical_usable": 8,
+    "months": 8,
+    "independent_ground_truth": false
+  }
+]

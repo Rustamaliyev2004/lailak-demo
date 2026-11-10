@@ -1,0 +1,129 @@
+{
+  "plan": {
+    "end": "2026-10-31",
+    "radar_filter": {
+      "relative_orbit": 173,
+      "orbit_state": "ascending",
+      "platform": "sentinel-1a",
+      "mode": "IW"
+    },
+    "sites": [
+      {
+        "id": "tashkent",
+        "lat": 41.3134,
+        "lon": 69.2454,
+        "half_m": 120,
+        "start": "2019-01-01",
+        "role": "development example; boundary unverified"
+      },
+      {
+        "id": "sergeli",
+        "lat": 41.124,
+        "lon": 69.1905,
+        "half_m": 55,
+        "start": "2023-06-01",
+        "role": "development example; tuned earlier"
+      },
+      {
+        "id": "valiasr",
+        "lat": 41.31403,
+        "lon": 69.30413,
+        "half_m": 85,
+        "start": "2023-06-01",
+        "role": "development example; weak prior signal"
+      },
+      {
+        "id": "housing_control",
+        "lat": 41.3125,
+        "lon": 69.3041,
+        "half_m": 50,
+        "start": "2023-06-01",
+        "role": "control hypothesis; stable housing not independently verified"
+      },
+      {
+        "id": "farm",
+        "lat": 41.1262,
+        "lon": 69.1955,
+        "half_m": 50,
+        "start": "2023-01-01",
+        "role": "vegetation illustration; crop unknown"
+      }
+    ],
+    "optical": "common SCL 20m grid; classes4,5,6; positive reflectance; >=60% valid and5pixels; one least scene-cloudy date in each sampled month; baseline>=4 offset-1000",
+    "purpose": "Repair extraction; no independent stage-accuracy evaluation. Bounded rerun samples April and October only; one eligible radar date and one least scene-cloudy optical date each month. Cadence chosen before examining observations."
+  },
+  "site": {
+    "id": "farm",
+    "lat": 41.1262,
+    "lon": 69.1955,
+    "half_m": 50,
+    "start": "2023-01-01",
+    "role": "vegetation illustration; crop unknown"
+  },
+  "acquisitions": {
+    "sentinel-1-rtc": [
+      {
+        "id": "S1A_IW_GRDH_1SDV_20230409T131528_20230409T131553_048020_05C594_rtc",
+        "datetime": "2023-04-09 13:15:41.305431+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20231006T131537_20231006T131602_050645_0619FC_rtc",
+        "datetime": "2023-10-06 13:15:49.737019+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20240403T131534_20240403T131559_053270_0674E6_rtc",
+        "datetime": "2024-04-03 13:15:46.533786+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20241012T131533_20241012T131558_056070_06DC02_rtc",
+        "datetime": "2024-10-12 13:15:45.767001+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20250410T131526_20250410T131551_058695_0744C5_rtc",
+        "datetime": "2025-04-10 13:15:39.122754+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20251007T131524_20251007T131549_061320_07A682_rtc",
+        "datetime": "2025-10-07 13:15:36.876028+00:00"
+      },
+      {
+        "id": "S1A_IW_GRDH_1SDV_20260405T131515_20260405T131540_063945_080B26_rtc",
+        "datetime": "2026-04-05 13:15:27.910882+00:00"
+      }
+    ],
+    "sentinel-2-l2a": [
+      {
+        "id": "S2A_MSIL2A_20230421T060631_R134_T42TWL_20230421T134146",
+        "datetime": "2023-04-21 06:06:31.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20231003T060659_R134_T42TWL_20231003T125401",
+        "datetime": "2023-10-03 06:06:59.024000+00:00"
+      },
+      {
+        "id": "S2A_MSIL2A_20240418T061901_R034_T42TWL_20240418T102728",
+        "datetime": "2024-04-18 06:19:01.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20241020T061809_R034_T42TWL_20241020T084240",
+        "datetime": "2024-10-20 06:18:09.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20250408T061629_R034_T42TWL_20250408T082848",
+        "datetime": "2025-04-08 06:16:29.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20251015T061729_R034_T42TWL_20251015T083251",
+        "datetime": "2025-10-15 06:17:29.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20260413T061629_R034_T42TWL_20260413T084305",
+        "datetime": "2026-04-13 06:16:29.024000+00:00"
+      },
+      {
+        "id": "S2B_MSIL2A_20261020T061859_R034_T42TWL_20261020T083959",
+        "datetime": "2026-10-20 06:18:59.025000+00:00"
+      }
+    ]
+  }
+}

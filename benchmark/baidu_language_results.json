@@ -1,0 +1,58 @@
+[
+  {
+    "file": "benchmark/test/05_ru_clean.png",
+    "language": "ru",
+    "synthetic_only": true,
+    "provider": "Baidu Unlimited OCR 2 official Space",
+    "expected": {
+      "project_id": "CHECK-104",
+      "invoice_id": "BILL-705",
+      "date": "2026-09-14",
+      "supplier": "Орион Строй",
+      "amount": "209865.67",
+      "currency": "UZS"
+    },
+    "raw_text": "<PAGE><BLOCK>header[65, 33, 477, 56]<FORK>LAILAK / TEST DOCUMENT\n<BLOCK>header[65, 83, 481, 97]<FORK>SYNTHETIC DATA - NOT A REAL LOAN OR INVOICE\n<BLOCK>text[65, 181, 343, 200]<FORK>Код проекта: CHECK-104\n<BLOCK>text[65, 232, 316, 251]<FORK>Номер счета: BILL-705\n<BLOCK>text[65, 283, 253, 302]<FORK>Дата: 2026-09-14\n<BLOCK>text[65, 334, 345, 353]<FORK>Поставщик: Орион Строй\n<BLOCK>text[65, 385, 260, 403]<FORK>Итого: 209 865,67\n<BLOCK>text[65, 436, 211, 453]<FORK>Валюта: UZS\n<BLOCK>text[65, 772, 905, 797]<FORK>This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate answer file. A flagged issue is a test condition and does not establish fraud.\n",
+    "fields": {
+      "project_id": "CHECK-104",
+      "invoice_id": "BILL-705",
+      "date": "2026-09-14",
+      "supplier": "Орион Строй",
+      "amount": "209865.67",
+      "currency": "UZS",
+      "amount_raw": "209 865,67"
+    },
+    "correct": 6,
+    "total": 6,
+    "status": "extracted",
+    "seconds": 25.252
+  },
+  {
+    "file": "benchmark/test/06_uz_clean.png",
+    "language": "uz",
+    "synthetic_only": true,
+    "provider": "Baidu Unlimited OCR 2 official Space",
+    "expected": {
+      "project_id": "CHECK-105",
+      "invoice_id": "BILL-706",
+      "date": "2026-09-15",
+      "supplier": "Zamin Beton",
+      "amount": "222210.67",
+      "currency": "UZS"
+    },
+    "raw_text": "<PAGE><BLOCK>header[65, 33, 477, 56]<FORK>LAILAK / TEST DOCUMENT\n<BLOCK>header[65, 83, 481, 97]<FORK>SYNTHETIC DATA - NOT A REAL LOAN OR INVOICE\n<BLOCK>text[65, 180, 326, 200]<FORK>Loyiha ID: CHECK-105\n<BLOCK>text[65, 230, 417, 251]<FORK>Hisob-faktura raqami: BILL-706\n<BLOCK>text[65, 282, 269, 301]<FORK>Sana: 2026-09-15\n<BLOCK>text[65, 333, 422, 352]<FORK>Yetkazib beruvchi: Zamin Beton\n<BLOCK>text[65, 384, 349, 404]<FORK>Jami summa: 222 210,67\n<BLOCK>text[65, 435, 215, 455]<FORK>Valyuta: UZS\n<BLOCK>text[65, 772, 905, 797]<FORK>This fixture is generated for engineering tests. It contains no customer data. Its values are recorded in a separate answer file. A flagged issue is a test condition and does not establish fraud.\n",
+    "fields": {
+      "project_id": "CHECK-105",
+      "invoice_id": "BILL-706",
+      "date": "2026-09-15",
+      "supplier": "Zamin Beton",
+      "amount": "222210.67",
+      "currency": "UZS",
+      "amount_raw": "222 210,67"
+    },
+    "correct": 6,
+    "total": 6,
+    "status": "extracted",
+    "seconds": 35.042
+  }
+]

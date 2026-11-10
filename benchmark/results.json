@@ -1,0 +1,525 @@
+{
+  "benchmark_type": "Synthetic engineering test; not bank-data accuracy. Known answers generated with fixtures; test templates share label families with parser. No independent human annotation or real customer validation.",
+  "parser_sha256": "a9d5df969de215a20ace7b13dbfb68db8ab4a85536e76340499af114baf40f08",
+  "documents": 12,
+  "fields_correct": 69,
+  "fields_total": 72,
+  "field_accuracy_on_this_set": 0.9583333333333334,
+  "complete_documents": 9,
+  "median_seconds": 0.265,
+  "results": [
+    {
+      "file": "benchmark/test/01_en_native.pdf",
+      "language": "en",
+      "quality": "native",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-100",
+          "actual": "CHECK-100",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-701",
+          "actual": "BILL-701",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-10",
+          "actual": "2026-09-10",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Atlas Beton LLC",
+          "actual": "Atlas Beton LLC",
+          "correct": true
+        },
+        "amount": {
+          "expected": "160485.67",
+          "actual": "160485.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.037,
+      "methods": [
+        "Embedded PDF text"
+      ]
+    },
+    {
+      "file": "benchmark/test/02_ru_native.pdf",
+      "language": "ru",
+      "quality": "native",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-101",
+          "actual": "CHECK-101",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-702",
+          "actual": "BILL-702",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-11",
+          "actual": "2026-09-11",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Строй",
+          "actual": "Орион Строй",
+          "correct": true
+        },
+        "amount": {
+          "expected": "172830.67",
+          "actual": "172830.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.009,
+      "methods": [
+        "Embedded PDF text"
+      ]
+    },
+    {
+      "file": "benchmark/test/03_uz_native.pdf",
+      "language": "uz",
+      "quality": "native",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-102",
+          "actual": "CHECK-102",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-703",
+          "actual": "BILL-703",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-12",
+          "actual": "2026-09-12",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Zamin Beton",
+          "actual": "Zamin Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "185175.67",
+          "actual": "185175.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.009,
+      "methods": [
+        "Embedded PDF text"
+      ]
+    },
+    {
+      "file": "benchmark/test/04_en_clean.png",
+      "language": "en",
+      "quality": "clean",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-103",
+          "actual": "CHECK-103",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-704",
+          "actual": "BILL-704",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-13",
+          "actual": "2026-09-13",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Atlas Beton LLC",
+          "actual": "Atlas Beton LLC",
+          "correct": true
+        },
+        "amount": {
+          "expected": "197520.67",
+          "actual": "197520.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.284,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/05_ru_clean.png",
+      "language": "ru",
+      "quality": "clean",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-104",
+          "actual": "СНЕСК-104",
+          "correct": false
+        },
+        "invoice_id": {
+          "expected": "BILL-705",
+          "actual": "BILL-705",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-14",
+          "actual": "2026-09-14",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Строй",
+          "actual": "Орион Строй",
+          "correct": true
+        },
+        "amount": {
+          "expected": "209865.67",
+          "actual": "209865.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.29,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/06_uz_clean.png",
+      "language": "uz",
+      "quality": "clean",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-105",
+          "actual": "CHECK-105",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-706",
+          "actual": "BILL-706",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-15",
+          "actual": "2026-09-15",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Zamin Beton",
+          "actual": "Zamin Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "222210.67",
+          "actual": "222210.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.265,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/07_en_rotated.png",
+      "language": "en",
+      "quality": "rotated",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-106",
+          "actual": "CHECK-106",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-707",
+          "actual": "BILL-707",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-16",
+          "actual": "2026-09-16",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Atlas Beton LLC",
+          "actual": "Atlas Beton LLC",
+          "correct": true
+        },
+        "amount": {
+          "expected": "234555.67",
+          "actual": "234555.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.298,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/08_ru_rotated.png",
+      "language": "ru",
+      "quality": "rotated",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-107",
+          "actual": "СНЕСК-107",
+          "correct": false
+        },
+        "invoice_id": {
+          "expected": "BILL-708",
+          "actual": "BILL-708",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-17",
+          "actual": "2026-09-17",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Строй",
+          "actual": "Орион Строй",
+          "correct": true
+        },
+        "amount": {
+          "expected": "246900.67",
+          "actual": "246900.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.295,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/09_uz_rotated.png",
+      "language": "uz",
+      "quality": "rotated",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-108",
+          "actual": "CHECK-108",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-709",
+          "actual": "BILL-709",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-18",
+          "actual": "2026-09-18",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Zamin Beton",
+          "actual": "Zamin Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "259245.67",
+          "actual": "259245.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.283,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/10_en_low.png",
+      "language": "en",
+      "quality": "low",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-109",
+          "actual": "CHECK-109",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-710",
+          "actual": "BILL-710",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-19",
+          "actual": "2026-09-19",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Atlas Beton LLC",
+          "actual": "Atlas Beton LLC",
+          "correct": true
+        },
+        "amount": {
+          "expected": "271590.67",
+          "actual": "271590.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.228,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/11_ru_low.png",
+      "language": "ru",
+      "quality": "low",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-110",
+          "actual": "СНЕСК-110",
+          "correct": false
+        },
+        "invoice_id": {
+          "expected": "BILL-711",
+          "actual": "BILL-711",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-20",
+          "actual": "2026-09-20",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Орион Строй",
+          "actual": "Орион Строй",
+          "correct": true
+        },
+        "amount": {
+          "expected": "283935.67",
+          "actual": "283935.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.236,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    },
+    {
+      "file": "benchmark/test/12_uz_low.png",
+      "language": "uz",
+      "quality": "low",
+      "checks": {
+        "project_id": {
+          "expected": "CHECK-111",
+          "actual": "CHECK-111",
+          "correct": true
+        },
+        "invoice_id": {
+          "expected": "BILL-712",
+          "actual": "BILL-712",
+          "correct": true
+        },
+        "date": {
+          "expected": "2026-09-21",
+          "actual": "2026-09-21",
+          "correct": true
+        },
+        "supplier": {
+          "expected": "Zamin Beton",
+          "actual": "Zamin Beton",
+          "correct": true
+        },
+        "amount": {
+          "expected": "296280.67",
+          "actual": "296280.67",
+          "correct": true
+        },
+        "currency": {
+          "expected": "UZS",
+          "actual": "UZS",
+          "correct": true
+        }
+      },
+      "seconds": 0.247,
+      "methods": [
+        "Apple Vision OCR"
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "packet": "clean",
+      "expected": [],
+      "actual": [],
+      "passed": true
+    },
+    {
+      "packet": "issues",
+      "expected": [
+        "repeated_invoice",
+        "total_mismatch"
+      ],
+      "actual": [
+        "repeated_invoice",
+        "total_mismatch"
+      ],
+      "passed": true
+    }
+  ],
+  "total_seconds": 2.54
+}

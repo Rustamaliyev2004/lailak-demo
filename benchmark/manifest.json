@@ -1,0 +1,230 @@
+{
+  "description": "Synthetic engineering benchmark. Known answers come from document generation, not independent bank annotation. Templates share label families with parser; real-world generalisation is not measured.",
+  "cases": [
+    {
+      "path": "benchmark/development/01_en_native.pdf",
+      "split": "development",
+      "language": "en",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-100",
+        "invoice_id": "BILL-701",
+        "date": "2026-09-10",
+        "supplier": "Atlas Beton LLC",
+        "amount": "160485.67",
+        "currency": "UZS"
+      },
+      "sha256": "5db1266e9d32add3ec6b07bf7295c206762946cada21371d16ee0eaf232f60e5"
+    },
+    {
+      "path": "benchmark/development/02_ru_native.pdf",
+      "split": "development",
+      "language": "ru",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-101",
+        "invoice_id": "BILL-702",
+        "date": "2026-09-11",
+        "supplier": "Орион Строй",
+        "amount": "172830.67",
+        "currency": "UZS"
+      },
+      "sha256": "5aa4a637bbe9e677a0f8f5bf040d9af986a1f2bdcdcc7d0302d6e6dfaabadf8d"
+    },
+    {
+      "path": "benchmark/development/03_uz_native.pdf",
+      "split": "development",
+      "language": "uz",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-102",
+        "invoice_id": "BILL-703",
+        "date": "2026-09-12",
+        "supplier": "Zamin Beton",
+        "amount": "185175.67",
+        "currency": "UZS"
+      },
+      "sha256": "04e781f05db889df8dce532b60b71ac98e20a2d8f8c933ff955262f023d58d46"
+    },
+    {
+      "path": "benchmark/test/01_en_native.pdf",
+      "split": "test",
+      "language": "en",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-100",
+        "invoice_id": "BILL-701",
+        "date": "2026-09-10",
+        "supplier": "Atlas Beton LLC",
+        "amount": "160485.67",
+        "currency": "UZS"
+      },
+      "sha256": "192e120838927429e72497beeacdd8f411924c1149a808b4773dcaf79e0603c3"
+    },
+    {
+      "path": "benchmark/test/02_ru_native.pdf",
+      "split": "test",
+      "language": "ru",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-101",
+        "invoice_id": "BILL-702",
+        "date": "2026-09-11",
+        "supplier": "Орион Строй",
+        "amount": "172830.67",
+        "currency": "UZS"
+      },
+      "sha256": "d5e6e7ef4127cbe3567614162eb8cff8630f7647fc2d72393573e3c15cc42585"
+    },
+    {
+      "path": "benchmark/test/03_uz_native.pdf",
+      "split": "test",
+      "language": "uz",
+      "quality": "native",
+      "expected": {
+        "project_id": "CHECK-102",
+        "invoice_id": "BILL-703",
+        "date": "2026-09-12",
+        "supplier": "Zamin Beton",
+        "amount": "185175.67",
+        "currency": "UZS"
+      },
+      "sha256": "3937ed14e9a6d77b97c6d3852ba42e846d9627a6ccea2667d911d033c1ccf9af"
+    },
+    {
+      "path": "benchmark/test/04_en_clean.png",
+      "split": "test",
+      "language": "en",
+      "quality": "clean",
+      "expected": {
+        "project_id": "CHECK-103",
+        "invoice_id": "BILL-704",
+        "date": "2026-09-13",
+        "supplier": "Atlas Beton LLC",
+        "amount": "197520.67",
+        "currency": "UZS"
+      },
+      "sha256": "72f3d55c9bd9e31f8df879d878a6f3888750082fefe45e439dda12c163459d2e"
+    },
+    {
+      "path": "benchmark/test/05_ru_clean.png",
+      "split": "test",
+      "language": "ru",
+      "quality": "clean",
+      "expected": {
+        "project_id": "CHECK-104",
+        "invoice_id": "BILL-705",
+        "date": "2026-09-14",
+        "supplier": "Орион Строй",
+        "amount": "209865.67",
+        "currency": "UZS"
+      },
+      "sha256": "7213ec8d00d18eb80a0d626c045564fbc226831861ace2114fc77856221146f8"
+    },
+    {
+      "path": "benchmark/test/06_uz_clean.png",
+      "split": "test",
+      "language": "uz",
+      "quality": "clean",
+      "expected": {
+        "project_id": "CHECK-105",
+        "invoice_id": "BILL-706",
+        "date": "2026-09-15",
+        "supplier": "Zamin Beton",
+        "amount": "222210.67",
+        "currency": "UZS"
+      },
+      "sha256": "8425e94421924ee825ab6ab24daad4106d21ac18bc06e65454b3e53605378053"
+    },
+    {
+      "path": "benchmark/test/07_en_rotated.png",
+      "split": "test",
+      "language": "en",
+      "quality": "rotated",
+      "expected": {
+        "project_id": "CHECK-106",
+        "invoice_id": "BILL-707",
+        "date": "2026-09-16",
+        "supplier": "Atlas Beton LLC",
+        "amount": "234555.67",
+        "currency": "UZS"
+      },
+      "sha256": "b0fdc3fdb072397bba53998f7fb23a75cbe91fe4affed5e6eb273c2476da1ec0"
+    },
+    {
+      "path": "benchmark/test/08_ru_rotated.png",
+      "split": "test",
+      "language": "ru",
+      "quality": "rotated",
+      "expected": {
+        "project_id": "CHECK-107",
+        "invoice_id": "BILL-708",
+        "date": "2026-09-17",
+        "supplier": "Орион Строй",
+        "amount": "246900.67",
+        "currency": "UZS"
+      },
+      "sha256": "ce3da812c51de43b4e9cd870728826fd54d1c13ef4e91b7976552507dbf8dfef"
+    },
+    {
+      "path": "benchmark/test/09_uz_rotated.png",
+      "split": "test",
+      "language": "uz",
+      "quality": "rotated",
+      "expected": {
+        "project_id": "CHECK-108",
+        "invoice_id": "BILL-709",
+        "date": "2026-09-18",
+        "supplier": "Zamin Beton",
+        "amount": "259245.67",
+        "currency": "UZS"
+      },
+      "sha256": "b40e653308d0a77b756a4fda4915990344617f30e0e65990fc9330d2194ec5fb"
+    },
+    {
+      "path": "benchmark/test/10_en_low.png",
+      "split": "test",
+      "language": "en",
+      "quality": "low",
+      "expected": {
+        "project_id": "CHECK-109",
+        "invoice_id": "BILL-710",
+        "date": "2026-09-19",
+        "supplier": "Atlas Beton LLC",
+        "amount": "271590.67",
+        "currency": "UZS"
+      },
+      "sha256": "41d4b79bb129baec556da901e3eaef1567c45cdd7d0c63cb9fe8bae7b3642c60"
+    },
+    {
+      "path": "benchmark/test/11_ru_low.png",
+      "split": "test",
+      "language": "ru",
+      "quality": "low",
+      "expected": {
+        "project_id": "CHECK-110",
+        "invoice_id": "BILL-711",
+        "date": "2026-09-20",
+        "supplier": "Орион Строй",
+        "amount": "283935.67",
+        "currency": "UZS"
+      },
+      "sha256": "2a045d85ac9a7e7199ea886e65e2a0cdf3ee5bfdc6cbc3f1a06d2a77ae777594"
+    },
+    {
+      "path": "benchmark/test/12_uz_low.png",
+      "split": "test",
+      "language": "uz",
+      "quality": "low",
+      "expected": {
+        "project_id": "CHECK-111",
+        "invoice_id": "BILL-712",
+        "date": "2026-09-21",
+        "supplier": "Zamin Beton",
+        "amount": "296280.67",
+        "currency": "UZS"
+      },
+      "sha256": "74f2ce5f2ef8854398477750cc72e9ebd1ea3f44aae8206e1eeb801c8fec9a3d"
+    }
+  ]
+}

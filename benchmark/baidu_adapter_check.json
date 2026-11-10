@@ -1,0 +1,8 @@
+{
+  "provider": "Baidu Unlimited OCR 2 official public Space",
+  "live_adapter_status": "blocked_by_anonymous_gpu_quota",
+  "last_error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota.",
+  "successful_prior_trials": "18/18 target fields across three synthetic pages; raw responses saved.",
+  "local_demo": "Local OCR remains operational. Cloud availability is not required.",
+  "not_claimed": "The integrated live option did not complete its final new-invoice test because of the quota."
+}
